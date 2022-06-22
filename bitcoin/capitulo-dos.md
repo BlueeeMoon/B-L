@@ -4,14 +4,16 @@
 
 ### ¿Qué son las entradas y salidas de transacciones y qué tienen que ver con la transferencia de valor?
 
-Las __UTXO__ (entradas y salidas de transacciones) representan la cantidad, monedas de Bitcoin en valor que se almacena en la cadena de bloques en una dirección de 
+Las __UTXO__ (entradas y salidas de transacciones) representan la cantidad, monedas de Bitcoin en valor que se almacenan en la cadena de bloques en una dirección de 
 Bitcoin específica.
 
-Cuando se dice que la billetera de un usuario ha recibido bitcoin, lo que queremos decir es que la billetera ha detectado una UTXO que se puede gastar con una de 
-las claves controladas por esa billetera.
+Las entradas especifican qué salidas de transacción gastar, estas entradas hacen referencia a una transacción anterior utilizando el ID de la transacción (txid) y las salidas contienen la cantidad que se enviará así como parte de un programa que contiene un __PKH__, esta parte del programa se denomina __secuencia de comandos pubkey.__ Posteriormente estas salidas se convertirán en una entrada.
 
-Los nodos completos de Bitcoin rastrean todas estás salidas disponibles y gastables y existe una base de datos denominada chainstate que contiene las UTXO y 
-que se utiliza para evitar tener que realizar ciertas búsquedas sobre toda la cadena de bloques.
+Cuando se dice que la billetera de un usuario ha recibido bitcoin, lo que se quiere decir es que la billetera ha detectado una UTXO que se puede gastar con una de 
+las claves __(PKH)__ controladas por esa billetera.
+
+Los nodos completos de Bitcoin rastrean todas estás salidas disponibles y gastables y existe una base de datos denominada chainstate que contiene las UTXOs y 
+que se utilizará para evitar tener que realizar ciertas búsquedas sobre toda la cadena de bloques.
 
 Así que las __UTXO__ son monedas en Bitcoin que se transfieren de un nodo a otro en toda la red como valor. 
 
@@ -22,7 +24,7 @@ Satoshi Nakamoto en el documento técnico: __Bitcoin: Un Sistema de Efectivo Ele
 
 ### ¿Por qué se necesita una tarifa de transacción y cómo se calcula?
 
-
+Las tarifas de transacción son necesarias para que los mineros procesen las transacciones de los usuarios y que puedan ser incluidas en la cadena de bloques. La tarifa se calcula haciendo una suma de los montos de las entradas, que debe ser mayor o igual que la suma de los montos de las salidas. La diferencia, si la hay, se denomina __tarifa de transacción.__
 
 ### ¿Por qué muchas transacciones de bitcoin incluirán una salida controlada por el remitente, además de la salida que paga al receptor? ¿Cuándo no ocurriría esto?
 
