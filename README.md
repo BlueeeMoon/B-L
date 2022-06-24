@@ -1,2 +1,2 @@
 # B&L
-Respuestas a muchas preguntas. 
+Notas sobre Bitcoin. 
