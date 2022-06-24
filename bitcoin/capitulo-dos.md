@@ -26,10 +26,4 @@ Satoshi Nakamoto en el documento técnico: __Bitcoin: Un Sistema de Efectivo Ele
 
 Las tarifas de transacción son necesarias para que los mineros procesen las transacciones de los usuarios y que puedan ser incluidas en la cadena de bloques. La tarifa se calcula haciendo una suma de los montos de las entradas, que debe ser mayor o igual que la suma de los montos de las salidas. La diferencia, si la hay, se denomina __tarifa de transacción.__
 
-### ¿Por qué muchas transacciones de bitcoin incluirán una salida controlada por el remitente, además de la salida que paga al receptor? ¿Cuándo no ocurriría esto?
 
-### ¿Qué es un pool de minería y por qué alguien pertenecería a uno?
-
-### ¿Cuál es el estado de una transacción que aún no se ha incluido en un bloque, pero se ha propagado por la red? ¿Por qué algunos servicios requieren 6 confirmaciones para liquidar fondos?"
-
-### ¿Qué tipo de privacidad existe para las transacciones en un libro mayor público?
