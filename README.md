@@ -1,4 +1,4 @@
-# Bitcoin Y Lightning.
+# Bitcoin y Lightning.
 
 ## Preguntas basadas en los libros de Mastering Bitcoin y Mastering Lightning.
 
