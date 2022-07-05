@@ -42,7 +42,44 @@ Esto ocurre cuando no se tiene una __UTXO__ con la cantidad exacta apagar o gast
   
 ### ¿Qué es un pool de minería y por qué alguien pertenecería a uno?
 
-### ¿Cuál es el estado de una transacción que aún no se ha incluido en un bloque, pero se ha propagado por la red? ¿Por qué algunos servicios requieren 6 confirmaciones para liquidar fondos?"
+Un pool de minería es entidad que reúne a un grupo de mineros que compartan sus esfuerzos de cómputo para minar como si fueran uno solo. Una persona que desea obtener bitcoin limpio, es decir; directo de la minería y no tiene los recursos económicos y/o técnicos para minar podría pertenecerse a un pool de minería y/o para obtener ganancias de ella.
+
+Anteriormente cualquier persona podía minar desde una computadora personal, actualmente la dificultad es muy alta.
+
+> *A medida que más mineros comenzaron a unirse a la red Bitcoin, la dificultad del problema aumentó rápidamente.*
+
+Los pool de minería comenzaron al parecer en el año 2010:
+
+> *Una vez que las personas comenzaron a usar computadoras con GPU para la minería, la minería se volvió muy difícil para otras personas. Estuve en bitcoin durante algunas semanas y aún no encontré el bloque (estoy minando en tres CPU). Cuando muchas personas tienen CPU lentas y minan por separado, cada uno de ellos compite entre ellos Y contra bastardos de GPU ricos ;-), porque todos cuentan hashes sha256 del mismo rango. ¡Dos CPUs separadas con 1000khash/s no es lo mismo que una máquina de 2000khash/s!.*
+
+[Fuente](https://bitcointalk.org/index.php?topic=1976.0)
+
+### ¿Cuál es el estado de una transacción que aún no se ha incluido en un bloque, pero se ha propagado por la red? 
+
+Cuando una transacción se ha propagado por la red de Bitcoin y no se ha confirmado se agrega a un grupo temporal de transacciones no verificadas mantenidas por cada nodo. 
+
+Cuando los mineros construyen nuevos bloques, agrega esta transacciones no verificada a un nuevo bloque y comienzan a calcular la prueba de trabajo para este bloque también conocido como bloque candidato. 
+
+Esta transacción no pasa a formar parte de la cadena de bloques hasta que se verifica y se incluya en un nuevo bloque. El bloque que contiene la transacción ahora se cuenta como una *__confirmación__* de esa transacción.
+
+
+### ¿Por qué algunos servicios requieren 6 confirmaciones para liquidar fondos?"
+
+Cuando se hacen transacciones con cantidades significativas los beneficiarios de estas requieren que existan seis confirmaciones para liquidar los fondos debido a que con seis confirmaciones es casi imposible que se puedan invalidar, es decir; se vuelven exponencialmente difíciles de revertir,  evitando que se incurra en un doble gasto asegurando con esto la transacción.  
+
+Así que cuando se extraen más bloques después de la primera confirmación actuarán como una garantía adicional.
 
 ### ¿Qué tipo de privacidad existe para las transacciones en un libro mayor público?
+
+Cuando una transacción es creada por ejemplo por Alicia hacía Bob, ella proporciona la firma que desbloquea las salidas de sus transacciones anteriores, con esto ella demuestra que posee los fondos, luego esa salida solo puede ser gastada por Bob con el requisito de que Bob produzca una firma para gastarla ya que su billetera tiene las claves privadas correspondientes a esa dirección.
+
+Esa salida contendrá algo así como: 
+
+> *Esta salida se paga a quien pueda presentar una firma de la clave correspondiente a la dirección de Bob.*
+
+<sub>Obtenido del libro Mastering Bitcoin.</sub>
+ 
+
+
+
 
