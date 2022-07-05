@@ -30,7 +30,7 @@ Las tarifas de transacción son necesarias para que los mineros procesen las tra
 
 Cuando un usuario crea una transacción para hacer un pago de cierto artículo, servicio o simplemente enviar una cantidad a otro usuario, debe considerar las __UTXOs__ que tiene en su wallet, quizás no tenga la cantidad exacta que desea enviar, así que tendría que crear dos transacciones, una para hacer el pago y otra donde recibirá el cambio.
 
-En la siguiente imagen podemos ver que Alicia tiene una cierta cantidad de __UTXOs__ en su wallet, ella (o la wallet) seleccionará que monedas utilizará para hacer este proceso.
+En la imagen de abajo podemos ver que Alicia tiene una cierta cantidad de __UTXOs__ en su wallet, ella (o la wallet) seleccionará que monedas utilizará para hacer este proceso.
 
 Selecciona dos con las cantidades que sumen la cantidad más la tarifa de transacción, el pago que desea hacer Alicia es de `1.2` bitcoin, al seleccionar dos __UTXO__, una de `1` y otra de `0.5`, logra cubrir el pago más la tarifa, el cambio será de `0.3` bitcoin.
 
@@ -38,10 +38,8 @@ Selecciona dos con las cantidades que sumen la cantidad más la tarifa de transa
 
 Esto ocurre cuando no se tiene una __UTXO__ con la cantidad exacta apagar o gastar. 
 
-![Esta es una imagen](https://myoctocat.com/assets/images/base-octocat.svg)
-
-image::imagenes/utxo.png["utxo"]
-
+![UTXO](/imagenes/utxo.png)
+  
 ### ¿Qué es un pool de minería y por qué alguien pertenecería a uno?
 
 ### ¿Cuál es el estado de una transacción que aún no se ha incluido en un bloque, pero se ha propagado por la red? ¿Por qué algunos servicios requieren 6 confirmaciones para liquidar fondos?"
